@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gameplay — HSR Wiki</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="wiki-shell">
+
+        <header class="wiki-topbar">
+            <a href="index.html" class="wiki-brand">
+                <span class="wiki-brand-star">&#10022;</span>
+                HSR WIKI
+            </a>
+            <nav class="wiki-nav">
+                <a href="index.html">Home</a>
+                <span class="wiki-nav-divider">|</span>
+                <a href="lore.html">Lore</a>
+                <span class="wiki-nav-divider">|</span>
+                <a href="gameplay.html" class="active">Gameplay</a>
+                <span class="wiki-nav-divider">|</span>
+                <a href="characters.html">Characters</a>
+            </nav>
+            <div class="wiki-search">
+                <input type="text" placeholder="Search wiki...">
+                <button>&#128269;</button>
+            </div>
+        </header>
+
+        <div class="wiki-body">
+
+            <aside class="wiki-sidebar">
+                <div class="sidebar-section">
+                    <h4 class="sidebar-heading">[Pages]</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Recent Changes</a></li>
+                        <li><a href="#">Categories</a></li>
+                    </ul>
+                </div>
+                <div class="sidebar-section">
+                    <h4 class="sidebar-heading">[Game Content]</h4>
+                    <ul>
+                        <li><a href="lore.html">Lore &amp; Story</a></li>
+                        <li><a href="gameplay.html" class="active">Gameplay</a></li>
+                        <li><a href="characters.html">Characters</a></li>
+                        <li><a href="#">Worlds &amp; Maps</a></li>
+                        <li><a href="#">Factions</a></li>
+                        <li><a href="#">Aeons &amp; Paths</a></li>
+                    </ul>
+                </div>
+                <div class="sidebar-section">
+                    <h4 class="sidebar-heading">[On This Page]</h4>
+                    <ul>
+                        <li><a href="#combat">Combat System</a></li>
+                        <li><a href="#elements">Elements</a></li>
+                        <li><a href="#paths">Paths / Roles</a></li>
+                        <li><a href="#modes">Game Modes</a></li>
+                        <li><a href="#warp">Warp System</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <main class="wiki-main">
+
+                <div class="wiki-page-header">
+                    <h1 class="wiki-page-title">Gameplay</h1>
+                    <div class="wiki-page-actions">
+                        <a href="#">[Edit]</a>
+                        <a href="#">[History]</a>
+                        <a href="#">[Watch]</a>
+                    </div>
+                </div>
+
+                <div class="wiki-content cf">
+
+                    <div class="wiki-infobox">
+                        <div class="infobox-header">At a Glance</div>
+                        <table class="infobox-table">
+                            <tr>
+                                <td>Genre</td>
+                                <td>Turn-Based RPG</td>
+                            </tr>
+                            <tr>
+                                <td>Platform</td>
+                                <td>PC, iOS, Android, PS5</td>
+                            </tr>
+                            <tr>
+                                <td>Party Size</td>
+                                <td>4 characters</td>
+                            </tr>
+                            <tr>
+                                <td>Elements</td>
+                                <td>7 playable</td>
+                            </tr>
+                            <tr>
+                                <td>Playable Paths</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>Pity (5&#9733;)</td>
+                                <td>90 pulls (soft 75)</td>
+                            </tr>
+                            <tr>
+                                <td>Pity (4&#9733;)</td>
+                                <td>10 pulls guaranteed</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <p>Honkai: Star Rail is a <strong>turn-based RPG</strong> where players form a party of four
+                        characters and engage in strategic combat encounters. The game combines character collection,
+                        exploration, and a deep narrative with challenging endgame modes for long-term progression.</p>
+
+                    <h1 id="combat">Combat System</h1>
+                    <p>Battles in Honkai: Star Rail unfold in turns determined by the <strong>Action Value (AV)</strong>
+                        system. Each character and enemy has a Speed stat; the lower their AV, the sooner they take
+                        their turn. This makes Speed a critical stat for controlling the pace of combat. There are
+                        no separate attack or defence phases — any character can act at any time based on AV order.</p>
+
+                    <div class="mechanic-grid">
+
+                        <div class="mechanic-card">
+                            <div class="mechanic-name">Skill Points (SP)</div>
+                            <div class="mechanic-desc">A shared team resource. Basic Attacks generate SP;
+                                Skills consume it. Managing SP carefully between attackers and supports is
+                                the core resource loop of every battle.</div>
+                        </div>
+
+                        <div class="mechanic-card">
+                            <div class="mechanic-name">Ultimates &amp; Energy</div>
+                            <div class="mechanic-desc">Characters build Energy from dealing and receiving damage.
+                                When their gauge is full, they can unleash a powerful Ultimate. Some characters
+                                use alternative mechanics — Acheron charges via debuffs, for example.</div>
+                        </div>
+
+                        <div class="mechanic-card">
+                            <div class="mechanic-name">Weakness Break</div>
+                            <div class="mechanic-desc">Every enemy has a Toughness bar and one or more
+                                elemental weaknesses. Attacking with the correct element depletes Toughness;
+                                when it hits zero, the enemy is Broken — dealing a burst of damage, delaying
+                                their next turn, and triggering a Break Effect based on the element used.</div>
+                        </div>
+
+                        <div class="mechanic-card">
+                            <div class="mechanic-name">Super Break</div>
+                            <div class="mechanic-desc">Introduced in Version 2.0, Super Break allows certain
+                                characters to deal massive bonus damage while an enemy is in a Broken state.
+                                It opened entirely new team-building archetypes centred around constant Breaks.</div>
+                        </div>
+
+                        <div class="mechanic-card">
+                            <div class="mechanic-name">Follow-Up Attacks</div>
+                            <div class="mechanic-desc">Some characters can trigger additional attacks outside
+                                the normal turn order — either automatically or in response to teammate actions.
+                                These chain reactions can dramatically increase damage output.</div>
+                        </div>
+
+                        <div class="mechanic-card">
+                            <div class="mechanic-name">DoT (Damage over Time)</div>
+                            <div class="mechanic-desc">Certain elements inflict status effects that deal damage
+                                each turn — Burn, Bleed, Shock, Wind Shear, and Erode. Stacking multiple DoTs
+                                on enemies is the core strategy of Nihility-focused teams.</div>
+                        </div>
+
+                    </div>
+
+                    <h1 id="elements">Elements</h1>
+                    <p>Every character and enemy is associated with one of <strong>7 elements</strong>. Attacking
+                        an enemy's weakness depletes their Toughness faster and triggers powerful
+                        <strong>Break Effects</strong>. Building a team that covers multiple weaknesses is
+                        essential for tackling tougher content.
+                    </p>
+
+                    <div class="element-grid">
+                        <div class="element-pill elem-fire">
+                            Fire
+                            <div
+                                style="font-size:0.62rem;margin-top:4px;opacity:0.7;text-transform:none;letter-spacing:0">
+                                Break: Burn DoT</div>
+                        </div>
+                        <div class="element-pill elem-ice">
+                            Ice
+                            <div
+                                style="font-size:0.62rem;margin-top:4px;opacity:0.7;text-transform:none;letter-spacing:0">
+                                Break: Freeze</div>
+                        </div>
+                        <div class="element-pill elem-lightning">
+                            Lightning
+                            <div
+                                style="font-size:0.62rem;margin-top:4px;opacity:0.7;text-transform:none;letter-spacing:0">
+                                Break: Shock DoT</div>
+                        </div>
+                        <div class="element-pill elem-wind">
+                            Wind
+                            <div
+                                style="font-size:0.62rem;margin-top:4px;opacity:0.7;text-transform:none;letter-spacing:0">
+                                Break: Wind Shear</div>
+                        </div>
+                        <div class="element-pill elem-physical">
+                            Physical
+                            <div
+                                style="font-size:0.62rem;margin-top:4px;opacity:0.7;text-transform:none;letter-spacing:0">
+                                Break: Bleed DoT</div>
+                        </div>
+                        <div class="element-pill elem-quantum">
+                            Quantum
+                            <div
+                                style="font-size:0.62rem;margin-top:4px;opacity:0.7;text-transform:none;letter-spacing:0">
+                                Break: Entangle</div>
+                        </div>
+                        <div class="element-pill elem-imaginary">
+                            Imaginary
+                            <div
+                                style="font-size:0.62rem;margin-top:4px;opacity:0.7;text-transform:none;letter-spacing:0">
+                                Break: Imprisonment</div>
+                        </div>
+                    </div>
+
+                    <h2>Break Effects by Element</h2>
+                    <ul>
+                        <li><strong style="color:#e8704a">Fire</strong> — Inflicts Burn, dealing persistent fire damage
+                            each turn.</li>
+                        <li><strong style="color:#6fc8d4">Ice</strong> — Freezes the enemy, preventing their action for
+                            one turn.</li>
+                        <li><strong style="color:#c07ddf">Lightning</strong> — Inflicts Shock, dealing persistent
+                            lightning damage each turn.</li>
+                        <li><strong style="color:#5cc97d">Wind</strong> — Inflicts Wind Shear, stacking damage-over-time
+                            up to 5 times.</li>
+                        <li><strong style="color:#c8c6c5">Physical</strong> — Inflicts Bleed, dealing damage
+                            proportional to the enemy's max HP.</li>
+                        <li><strong style="color:#7b9ddf">Quantum</strong> — Entangles the enemy, dealing damage and
+                            delaying their action.</li>
+                        <li><strong style="color:#d4c97a">Imaginary</strong> — Imprisons the enemy, reducing their Speed
+                            and delaying their next turn.</li>
+                    </ul>
+
+                    <h1 id="paths">Paths &amp; Combat Roles</h1>
+                    <p>Each character's <strong>Path</strong> defines their combat role. While Paths carry deep
+                        lore significance, in gameplay they serve as a flexible class system. The 8 playable Paths
+                        cover every role a team might need, and many characters can fill hybrid roles depending
+                        on how they're built.</p>
+                    <ul>
+                        <li><strong>Hunt &amp; Destruction</strong> — Primary damage dealers. Hunt excels at
+                            single-target precision; Destruction mixes damage with self-sustain.</li>
+                        <li><strong>Erudition</strong> — AoE specialists, ideal for clearing multiple weaker enemies.
+                        </li>
+                        <li><strong>Nihility</strong> — Debuffers and DoT dealers. Best at sustained damage over
+                            many turns.</li>
+                        <li><strong>Harmony</strong> — Buffers who amplify the team's overall output.</li>
+                        <li><strong>Preservation</strong> — Shields and aggro management to protect allies.</li>
+                        <li><strong>Abundance</strong> — Healers who restore HP and provide sustain.</li>
+                        <li><strong>Remembrance</strong> — A newer hybrid Path focused on ice mechanics and
+                            summoned <em>Memosprite</em> companions.</li>
+                    </ul>
+
+                    <h1 id="modes">Game Modes</h1>
+                    <p>Beyond the main story, Honkai: Star Rail offers a range of <strong>recurring game modes</strong>
+                        that refresh regularly and reward players who push their team-building skills. Most modes
+                        reset every few weeks and grant <strong>Stellar Jade</strong> — the premium currency used for
+                        Warps.</p>
+
+                    <div class="mode-grid">
+
+                        <div class="mode-card">
+                            <div class="mode-title">Simulated Universe <span class="mode-tag">Permanent</span></div>
+                            <div class="mode-desc">A roguelike mode where players run through procedurally
+                                structured worlds, collecting Blessings tied to the Aeons' Paths to power up
+                                their run. Supports various difficulty tiers including the advanced
+                                <em>Divergent Universe</em> variant.
+                            </div>
+                        </div>
+
+                        <div class="mode-card">
+                            <div class="mode-title">Memory of Chaos <span class="mode-tag">Bi-weekly</span></div>
+                            <div class="mode-desc">The classic endgame mode. Two waves of increasingly
+                                difficult enemies must be cleared within a turn limit using two separate teams
+                                of four. The highest stages reward substantial Stellar Jade every two weeks.</div>
+                        </div>
+
+                        <div class="mode-card">
+                            <div class="mode-title">Pure Fiction <span class="mode-tag">Bi-weekly</span></div>
+                            <div class="mode-desc">Introduced in Version 2.0. Unlike Memory of Chaos, Pure
+                                Fiction rewards hitting high damage numbers against large groups of enemies.
+                                AoE and DoT teams thrive here.</div>
+                        </div>
+
+                        <div class="mode-card">
+                            <div class="mode-title">Apocalyptic Shadow <span class="mode-tag">Bi-weekly</span></div>
+                            <div class="mode-desc">Added in 2.0 alongside Pure Fiction. Focuses on boss fights
+                                where Break mechanics and specific elemental weaknesses play a central role.
+                                Break-focused teams perform extremely well.</div>
+                        </div>
+
+                        <div class="mode-card">
+                            <div class="mode-title">Forgotten Hall <span class="mode-tag">Permanent</span></div>
+                            <div class="mode-desc">An older endgame mode with static, increasingly difficult
+                                enemy stages. Useful for new players ramping up their roster depth before
+                                tackling the rotating modes.</div>
+                        </div>
+
+                        <div class="mode-card">
+                            <div class="mode-title">Story Missions <span class="mode-tag">Permanent</span></div>
+                            <div class="mode-desc">The core Trailblaze missions and Companion missions that
+                                advance the narrative. New story chapters are added with each major version
+                                update, approximately every 6 weeks.</div>
+                        </div>
+
+                    </div>
+
+                    <h1 id="warp">Warp System (Gacha)</h1>
+                    <p>Characters and Light Cones (equipment) are obtained through <strong>Warps</strong>,
+                        Honkai: Star Rail's gacha system. There are several banner types, each using different
+                        currencies:</p>
+                    <ul>
+                        <li><strong>Limited Banners</strong> — Feature a specific 5&#9733; character for a limited time.
+                            The <em>50/50 system</em> means the first 5&#9733; pull is a 50% chance of being the
+                            featured character; if it isn't, the next 5&#9733; is guaranteed to be.</li>
+                        <li><strong>Standard Banner</strong> — A permanent pool of 5&#9733; characters and Light Cones
+                            available indefinitely. Won pulls from 50/50 losses go here.</li>
+                        <li><strong>Light Cone Banners</strong> — Separate banners for a featured 5&#9733; Light Cone
+                            (signature weapon), also using the 75/25 guarantee system.</li>
+                    </ul>
+                    <p>The <strong>soft pity</strong> begins at pull 75, dramatically increasing 5&#9733; rates.
+                        Hard pity guarantees a 5&#9733; at pull <strong>90</strong>. A 4&#9733; is guaranteed within
+                        every <strong>10</strong> pulls. Pity carries over between banner periods.</p>
+
+                </div>
+            </main>
+        </div>
+
+        <footer class="wiki-footer">
+            <div class="footer-brand">Honkai: Star Rail Wiki</div>
+            <div class="footer-links">
+                <a href="#">About Us</a> &bull; <a href="#">Help</a> &bull; <a href="#">Contact</a>
+            </div>
+            <div class="footer-copy">&copy; 2026 School Project Wiki &mdash; All Rights Reserved</div>
+        </footer>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
